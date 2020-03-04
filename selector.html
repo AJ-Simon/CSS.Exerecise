@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors and Pseudo Selectors</title>
+    <style>
+        input[type="submit"]{
+            background-color: peachpuff;
+            margin-top: 5px;
+        }
+        input[type="password"]{
+            background-color: skyblue;
+            margin-top: 5px;
+        }
+        .box{
+            height:100px;
+            background-color: transparent;
+            display: block;
+        }
+        .box:nth-child(3){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box">
+        <input type="password">
+        <input type="submit">
+        </div>
+    </div>
+</body>
+</html>
