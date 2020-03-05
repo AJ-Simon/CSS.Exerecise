@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS state</title>
+    <style>
+        .box{
+            background-color: greenyellow;
+            font-size: 40px;
+        }
+        .box:active{
+            background-color: pink;
+        } /* 누르고 있으면 색이 바뀐다*/
+        .box:hover{
+            background-color: midnightblue;
+        } /* 포인터를 가져다 가면 색이 바뀐다*/
+        .box:focus{
+            background-color: olive;
+        } /* 클리하면 색이 바뀐다 */
+    </style>
+</head>
+<body>
+    <textarea class="box">lalalalalalalala</textarea>
+</body>
+</html>
